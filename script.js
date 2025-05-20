@@ -1,17 +1,39 @@
-function bounce(element) {
-    element.classList.add('bounce');
-    setTimeout(() => element.classList.remove('bounce'), 500);
-  }
+window.addEventListener('DOMContentLoaded', () => {
+    const petals = [];
   
-  function sparkle() {
-    const star = document.createElement('div');
-    star.innerText = '✨';
-    star.style.position = 'fixed';
-    star.style.left = Math.random() * window.innerWidth + 'px';
-    star.style.top = Math.random() * window.innerHeight + 'px';
-    star.style.fontSize = '1.5rem';
-    star.style.zIndex = 9999;
-    star.style.animation = 'sparkleFade 1s forwards';
-    document.body.appendChild(star);
-    setTimeout(() => document.body.removeChild(star), 1000);
-  }
+    for (let i = 0; i < 10; i++) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'petal-wrapper';
+  
+      const petal = document.createElement('div');
+      petal.className = 'petal-inner';
+      wrapper.appendChild(petal);
+  
+      wrapper.style.left = `${Math.random() * 100}vw`;
+      wrapper.style.animationDelay = `${Math.random() * 5}s`;
+      wrapper.style.animationDuration = `${5 + Math.random() * 20}s`;
+  
+      document.body.appendChild(wrapper);
+      petals.push(petal);
+    }
+  
+    document.addEventListener('mousemove', (e) => {
+      petals.forEach(petal => {
+        const rect = petal.getBoundingClientRect();
+        const dx = e.clientX - (rect.left + rect.width / 2);
+        const dy = e.clientY - (rect.top + rect.height / 2);
+        const dist = Math.sqrt(dx * dx + dy * dy);
+  
+        if (dist < 100) {
+          const angle = Math.atan2(dy, dx);
+          const offset = 30 * (1 - dist / 100);
+          const x = Math.cos(angle) * offset;
+          const y = Math.sin(angle) * offset;
+          petal.style.transform = `translate(${x}px, ${y}px)`;
+        } else {
+          petal.style.transform = '';
+        }
+      });
+    });
+  });
+  
