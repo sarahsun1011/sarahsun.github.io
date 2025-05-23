@@ -107,4 +107,9 @@ body {
     width: 1250px;          /* or whatever size you want */
     z-index: 0;
   }
+
+  .bird {
+    bottom:0%;
+    width: 500px;
+  }
   
