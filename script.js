@@ -34,6 +34,32 @@ window.addEventListener('DOMContentLoaded', () => {
           petal.style.transform = '';
         }
       });
+    }); 
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const gifs = document.querySelectorAll(".hover-gif");
+    console.log("GIF elements found:", gifs.length);
+
+    gifs.forEach(img => {
+      const animatedSrc = img.dataset.gif;
+      const stillSrc = img.dataset.still;
+
+      if (!animatedSrc || !stillSrc) {
+        console.error("Missing data-gif or data-still on:", img);
+        return;
+      }
+
+      img.addEventListener("mouseenter", () => {
+        console.log("Hover → switching to:", animatedSrc);
+        img.src = animatedSrc + '?v=' + Date.now(); // Force reload
+      });
+
+      img.addEventListener("mouseleave", () => {
+        console.log("Leave → switching to:", stillSrc);
+        img.src = stillSrc;
+      });
     });
   });
+
   

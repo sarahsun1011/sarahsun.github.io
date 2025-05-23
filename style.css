@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     color: #444444;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
   }
   
@@ -73,7 +73,7 @@ body {
     height: 20px;
     animation: fall linear infinite;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .petal-inner {
@@ -83,6 +83,7 @@ body {
     background: radial-gradient(circle, #ffc0cb 30%, #ff69b4 80%);
     opacity: 0.8;
     transition: transform 0.3s ease-out;
+    pointer-events: none;
   }
   
   @keyframes fall {
@@ -105,11 +106,20 @@ body {
     left: 20%;
     transform: translateX(-50%);
     width: 1250px;          /* or whatever size you want */
-    z-index: 0;
+    z-index: 1;
   }
 
   .bird {
-    bottom:0%;
-    width: 500px;
+    position: absolute;
+    bottom: -30px;
+    left:50px;
+    width: 150px;
+    z-index: 0;
+  }
+
+  .hover-gif {
+    position: absolute;
+    top: 150px;
+    right: 350px;
   }
   
