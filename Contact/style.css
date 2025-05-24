@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to bottom, #ffe4ec, #fdf0f8, #e0f7fa);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    overflow-x: hidden;
+    text-align: left;
+  }
