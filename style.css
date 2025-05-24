@@ -111,8 +111,8 @@ body {
 
   .bird {
     position: absolute;
-    bottom: 235px;
-    left:120px;
+    bottom: 225px;
+    left:125px;
     width: 150px;
     z-index: 1;
   }
