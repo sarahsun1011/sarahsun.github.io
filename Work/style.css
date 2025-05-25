@@ -54,11 +54,11 @@ body {
     background-color: #fbf2d8;
     top: 30%;
     left: 20%;
+    transition: transform 0.3s ease; 
   }
 
-  .console :hover{
-    width: 350px;
-    height: 350px;
+  .console:hover{
+    transform: scale(1.2)
   }
 
   .notes {
@@ -72,4 +72,61 @@ body {
     background-color: #fbf2d8;
     top: 30%;
     left: 60%;
+    transition: transform 0.3s ease; 
+  }
+
+  .notes:hover{
+    transform: scale(1.2)
+  }
+
+  .gamelink {
+    position:absolute;
+    top: 80%;
+    left: 17.5%;
+  }
+
+  .gamelink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .gamelink a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .gamelink a:hover {
+    color: #ff69b4;
+  }
+
+  .soundlink {
+    position:absolute;
+    top: 80%;
+    left: 55%;
+  }
+
+  .soundlink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .soundlink a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .soundlink a:hover {
+    color: #ff69b4;
   }

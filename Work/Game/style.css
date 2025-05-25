@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to bottom, #ffe4ec, #fdf0f8, #e0f7fa);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    overflow-x: hidden;
+    text-align: left;
+  }
+  .navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 10;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ff69b4;
+  }
+
+  .titleText {
+    position: absolute;
+    font-size: 60px;
+    left: 100px;
+    color: #ff69b4;
+  }
