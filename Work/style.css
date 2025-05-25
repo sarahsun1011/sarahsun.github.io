@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to bottom, #ffe4ec, #fdf0f8, #e0f7fa);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    overflow-x: hidden;
+    text-align: left;
+  }
+  .navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 10;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ff69b4;
+  }
+
+  .titleText {
+    position: absolute;
+    font-size: 60px;
+    left: 100px;
+    color: #ff69b4;
+  }
+
+  .console {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit:contain;       /* ensures it fills the circle without distortion */
+    border-radius: 50%;     /* makes it a circle */
+    border: 6px solid #cbe6ee; /* optional: adds a border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
+    background-color: #fbf2d8;
+    top: 30%;
+    left: 20%;
+  }
+
+  .console :hover{
+    width: 350px;
+    height: 350px;
+  }
+
+  .notes {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;      /* ensures it fills the circle without distortion */
+    border-radius: 50%;     /* makes it a circle */
+    border: 6px solid #cbe6ee; /* optional: adds a border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
+    background-color: #fbf2d8;
+    top: 30%;
+    left: 60%;
+  }
