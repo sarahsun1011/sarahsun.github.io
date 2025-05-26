@@ -47,11 +47,11 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    object-fit:contain;       /* ensures it fills the circle without distortion */
+    object-fit: contain;       /* ensures it fills the circle without distortion */
     border-radius: 50%;     /* makes it a circle */
-    border: 6px solid #cbe6ee; /* optional: adds a border */
+    border: 4px solid #FFFFFF; /* optional: adds a border */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
-    background-color: #fbf2d8;
+    background-color: #c2e9f0;
     top: 30%;
     left: 20%;
     transition: transform 0.3s ease; 
@@ -108,7 +108,7 @@ body {
   .soundlink {
     position:absolute;
     top: 80%;
-    left: 55%;
+    left: 54.5%;
   }
 
   .soundlink ul {
