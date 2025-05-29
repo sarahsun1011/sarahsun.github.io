@@ -48,3 +48,10 @@ body {
     padding-right: 10%;
     font-size: 1.3rem;
   }
+
+  .poster {
+    position: abosolute;
+    left: 50%;
+    width: 1000px;
+  }
+  
