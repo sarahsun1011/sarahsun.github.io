@@ -67,7 +67,7 @@ body {
     height: 300px;
     object-fit: contain;      /* ensures it fills the circle without distortion */
     border-radius: 50%;     /* makes it a circle */
-    border: 6px solid #cbe6ee; /* optional: adds a border */
+    border: 6px solid #FFFFFF; /* optional: adds a border */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
     background-color: #fbf2d8;
     top: 30%;
