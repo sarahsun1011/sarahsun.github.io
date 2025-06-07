@@ -42,3 +42,10 @@ body {
     left: 100px;
     color: #ff69b4;
   }
+
+  .email {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: 20px;
+  }
